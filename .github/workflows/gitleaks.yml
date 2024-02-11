@@ -1,9 +1,9 @@
 name: gitleaks
-on: [pull_request, push, workflow_dispatch]
+on: [push, workflow_dispatch]
 jobs:
   scan:
     name: gitleaks
-    runs-on: alpine-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
@@ -11,3 +11,4 @@ jobs:
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE}}
