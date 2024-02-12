@@ -1,7 +1,7 @@
 return {
   {
     "rebelot/kanagawa.nvim",
-    config = {
+    opts = {
       transparent = true,
       background = {
         dark = "dragon",
