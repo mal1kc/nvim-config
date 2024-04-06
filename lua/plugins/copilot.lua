@@ -7,7 +7,7 @@ return {
     opts = {
       suggestion = { enabled = false },
       panel = { enabled = false },
-      filetypes = { ["*"] = false }, -- disable copilot for all filetypes by default
+      filetypes = { cs = true, ["*"] = false }, -- disable copilot for all filetypes by default
     },
   },
   {
