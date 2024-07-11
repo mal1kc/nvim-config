@@ -1,6 +1,5 @@
-# my neovim config
+# my neovim configuration
 
 ## 💤 LazyVim as plugin manager
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+most of configuration comes from [LazyVim](https://github.com/LazyVim/LazyVim) [starter template configuration](https://github.com/LazyVim/starter).

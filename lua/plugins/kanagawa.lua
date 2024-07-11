@@ -16,4 +16,8 @@ return {
       colorscheme = "kanagawa",
     },
   },
+  {
+    "catppuccin/nvim",
+    enabled = false,
+  },
 }

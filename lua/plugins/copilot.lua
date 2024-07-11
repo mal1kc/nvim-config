@@ -7,7 +7,8 @@ return {
     opts = {
       suggestion = { enabled = false },
       panel = { enabled = false },
-      filetypes = { cs = true, ["*"] = false }, -- disable copilot for all filetypes by default
+      -- disable copilot for all filetypes by default , only enabled in csharp
+      filetypes = { cs = true, ["*"] = false },
     },
   },
   {
@@ -70,13 +71,5 @@ return {
         end,
       },
     },
-    ---@param opts cmp.ConfigSchema
-    opts = function(_, opts)
-      table.insert(opts.sources, 1, {
-        name = "copilot",
-        group_index = 1,
-        priority = 100,
-      })
-    end,
   },
 }

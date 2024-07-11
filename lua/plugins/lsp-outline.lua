@@ -13,7 +13,7 @@ return {
     local filter = Config.kind_filter
 
     if type(filter) == "table" then
-      filter = filter.default
+      filter = filter
       if type(filter) == "table" then
         for kind, symbol in pairs(defaults.symbols) do
           opts.symbols[kind] = {
