@@ -2,6 +2,9 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+vim.o.relativenumber = true
+vim.o.scrolloff = 10
+
 if lazyvim_docs then
   vim.g.lazyvim_python_lsp = "basedpyright"
   vim.g.lazyvim_python_ruff = "ruff"
@@ -10,6 +13,7 @@ end
 if vim.g.neovide then
   vim.notify("opened in neovide loading specific settings to neovide", vim.log.levels.INFO)
   vim.o.guifont = "Iosevka Term:h14"
+  vim.g.neovide_transparency = 0.8
 
   -- Function to update guifont
   local function update_guifont(increment)
