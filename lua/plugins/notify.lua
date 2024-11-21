@@ -1,6 +1,9 @@
 return {
-  "rcarriga/nvim-notify",
+  "folke/snacks.nvim",
   opts = {
-    timeout = 2000,
+    notifier = {
+      enabled = true,
+      timeout = 2000,
+    },
   },
 }
