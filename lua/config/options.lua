@@ -13,7 +13,7 @@ end
 if vim.g.neovide then
   vim.notify("opened in neovide loading specific settings to neovide", vim.log.levels.INFO)
   vim.o.guifont = "Iosevka Term:h14"
-  vim.g.neovide_transparency = 0.8
+  vim.g.neovide_opacity = 0.8
 
   -- Function to update guifont
   local function update_guifont(increment)
