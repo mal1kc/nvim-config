@@ -5,11 +5,6 @@
 vim.o.relativenumber = true
 vim.o.scrolloff = 10
 
-if lazyvim_docs then
-  vim.g.lazyvim_python_lsp = "basedpyright"
-  vim.g.lazyvim_python_ruff = "ruff"
-end
-
 if vim.g.neovide then
   vim.notify("opened in neovide loading specific settings to neovide", vim.log.levels.INFO)
   vim.o.guifont = "Iosevka Term:h14"
