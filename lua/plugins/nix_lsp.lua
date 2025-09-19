@@ -5,7 +5,7 @@ if vim.fn.has("win32") == 1 then
   return {}
 else
   return {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       if type(opts.ensure_installed) == "table" then
         table.insert(opts.ensure_installed, "nil")
