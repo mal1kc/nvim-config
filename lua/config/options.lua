@@ -4,7 +4,7 @@
 
 vim.o.relativenumber = true
 vim.o.scrolloff = 10
-
+vim.g.root_spec = { "lsp", "cwd", "" }
 if vim.g.neovide then
   vim.notify("opened in neovide loading specific settings to neovide", vim.log.levels.INFO)
   vim.o.guifont = "Iosevka Term:h15"
